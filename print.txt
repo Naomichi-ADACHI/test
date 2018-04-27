@@ -1,0 +1,36 @@
+static void print(){
+	for(int j = 0; j < SIZE * 3 + 1; j++){
+		System.out.print("-");
+	}
+	System.out.pritnln();
+	
+	for(int i = 0; i < (SIZE - 5) / 2; i++){
+		System.out.print("|@");
+	}
+	System.out.print("|‚a|‚h|‚m|‚f|‚n|");
+	for(int i = 0; i < (SIZE - 5) / 2; i++){
+		System.out.print("@|");
+	}
+	System.out.println();
+	
+	for(int j = 0; j < SIZE * 3 + 1; j++){
+		System.out.print("-");
+	}System.out.println();
+	
+	for(int i = 0; i < SIZE; i++){
+		System.out.print("|");
+		for(int j = 0; j < SIZE; j++){
+			if(card[i][j] == -1){
+				System.out.printf("¡|");
+			}else{
+				System.out.printf("%2d|", card[i][j]);
+			}
+		}
+		System.out.println();
+		for(int j = 0; j < SIZE * 3 + 1; j++){
+			System.out.print("-");
+		}
+		System.out.println();
+	}
+	System.out.println("ƒŠ[ƒ`” : " + reachCnt);
+}

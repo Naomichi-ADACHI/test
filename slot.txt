@@ -1,0 +1,11 @@
+static int slot(){
+	boolean ok;
+	int n;
+	do{
+		n = 1 + (int)(Math.random) * 75);
+	}
+	while(used[n]);
+	used[n] = true;
+	System.out.println("Number : " + n);
+	return n;
+}
